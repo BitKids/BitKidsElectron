@@ -1,0 +1,21 @@
+{
+  "name": "BitKids",
+  "private": true,
+  "version": "0.0.1",
+  "description": "",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/BitKids/BitKidsElectron.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "GPLv3",
+  "bugs": {
+    "url": "https://github.com/BitKids/BitKidsElectron/issues"
+  },
+  "homepage": "https://github.com/BitKids/BitKidsElectron#readme"
+}
