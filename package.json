@@ -3,7 +3,7 @@
   "private": true,
   "version": "0.0.1",
   "description": "",
-  "main": "main.js",
+  "main": "dist/main.js",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/BitKids/BitKidsElectron.git"
@@ -19,7 +19,10 @@
     "node": ">=5.6.0"
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "gulp es2015 && npm run copy",
+    "copy": "cp src/index.html dist/index.html",
+    "electron": "npm run build && electron ."
   },
   "devDependencies": {
     "babel": "^6.5.2",
