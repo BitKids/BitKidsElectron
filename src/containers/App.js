@@ -9,6 +9,14 @@ export default class App extends Component {
     return (
       <div>
         {this.props.children}
+        {
+          (() => {
+            if (process.env.NODE_ENV !== 'production') {
+              const DevTools = require('./DevTools').default;
+              return <DevTools />;
+            }
+          })()
+        }
       </div>
     );
   }
